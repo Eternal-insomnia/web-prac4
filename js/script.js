@@ -18,8 +18,8 @@ function send(surname, radio1, radio2, radio3) {
         markPhyz = parseInt(radio3.value);
 
     document.write("<h2>Фамилия: " + surname.value + "</h2>");
-    document.write("<h2>Оценка по программированию: " + markProg.value + "</h2>");
-    document.write("<h2>Оценка по математике: " + markMath.value + "</h2>");
-    document.write("<h2>Оценка по физике: " + markPhyz.value + "</h2>");
+    document.write("<h2>Оценка по программированию: " + markProg + "</h2>");
+    document.write("<h2>Оценка по математике: " + markMath + "</h2>");
+    document.write("<h2>Оценка по физике: " + markPhyz + "</h2>");
     document.write("<h2>Рейтинг: " + ((markMath + markPhyz + markProg)/3 ) + "</h2>");
 }

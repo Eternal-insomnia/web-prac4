@@ -37,34 +37,27 @@
         <input type="text" name="surname" placeholder="Фамилия"><br>
 
         <quest>
-            <br><label>Оценка по программированию:</label><br>
-            <input type="radio" name="radio1" value="5" checked="checked">
-            <label>Отлично</label><br>
-            <input type="radio" name="radio1" value="4">
-            <label>Хорошо</label><br>
-            <input type="radio" name="radio1" value="3">
-            <label>Удовлетворительно</label><br>
+            <br><label>Оценка по программированию: </label><br>
+            <label> <input type="radio" name="radio1" value="5" checked="checked"> Отлично</label><br>
+            <label> <input type="radio" name="radio1" value="4">                   Хорошо</label><br>
+            <label> <input type="radio" name="radio1" value="3">                   Удовлетворительно</label><br>
         </quest>
 
         <quest>
             <br><label>Оценка по матемтике:</label><br>
-            <input type="radio" name="radio2" value="5" checked="checked">
-            <label>Отлично</label><br>
-            <input type="radio" name="radio2" value="4">
-            <label>Хорошо</label><br>
-            <input type="radio" name="radio2" value="3">
-            <label>Удовлетворительно</label><br>
+            <label> <input type="radio" name="radio2" value="5" checked="checked"> Отлично</label><br>
+            <label> <input type="radio" name="radio2" value="4">                   Хорошо</label><br>
+            <label> <input type="radio" name="radio2" value="3">                   Удовлетворительно</label><br>
         </quest>
 
         <quest>
             <br><label>Оценка по физике:</label><br>
-            <input type="radio" name="radio3" value="5" checked="checked">
-            <label>Отлично</label><br>
-            <input type="radio" name="radio3" value="4">
-            <label>Хорошо</label><br>
-            <input type="radio" name="radio3" value="3">
-            <label>Удовлетворительно</label><br>
+            <label> <input type="radio" name="radio3" value="5" checked="checked"> Отлично</label><br>
+            <label> <input type="radio" name="radio3" value="4">                   Хорошо</label><br>
+            <label> <input type="radio" name="radio3" value="3">                   Удовлетворительно</label><br>
         </quest>
+
+        <input type="button" value="ОТПРАВИТЬ" onclick="send(opros.surname, opros.radio1, opros.radio2, opros.radio3);">
         
     </form>
 </body>
