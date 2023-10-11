@@ -1,0 +1,41 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.all_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all_center input[type="button"] {
+    background-color: orange;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px darkgray;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+.all_center input[type="button"]:hover {
+    background-color: #fff;
+    color: orange;
+    transition-duration: .3s;
+}
+.all_center input[type=number]:hover {
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.buttonAvgBox {
+    position: relative;
+    top: 20px;
+}
+.buttonAvgBox input[type=button] {
+    position: relative;
+    left: 10px;
+}
+
+.quest {
+    position: absolute;
+}
