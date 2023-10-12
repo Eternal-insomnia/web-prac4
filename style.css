@@ -35,9 +35,18 @@ body {
     position: relative;
     left: 10px;
 }
+.buttonAvgBox input[type=number] {
+    border-radius: 6px;
+    border: 2px solid rgb(179, 179, 179);
+    height: 1.5em;
+    width: 110px;
+    font-size: 12px;
+}
 
 .radio_button {
     display: flex; /* инициализация flexbox */
+
+    overflow: hidden;
 
     flex-direction: row; /* определение размещения flex-items во flexbox*/
     flex-wrap: nowrap; /* определение переноса элементов на следующую строку*/
@@ -45,6 +54,14 @@ body {
 
     justify-content: space-around; /*запомните*/
     align-items: center;           /*твари*/
+}
+.radio_button input[type=text] {
+    font-size: 40px;
+    width: 30%;
+}
+.radio_button input[type=text]:hover {
+    border: 2px solid gray;
+    border-radius: 6px;
 }
 
 .buttonSend {
