@@ -36,6 +36,35 @@ body {
     left: 10px;
 }
 
-.quest {
-    position: absolute;
+.radio_button {
+    display: flex; /* инициализация flexbox */
+
+    flex-direction: row; /* определение размещения flex-items во flexbox*/
+    flex-wrap: nowrap; /* определение переноса элементов на следующую строку*/
+    flex-flow: row nowrap; /* сокращённый вариант двух строк выше*/
+
+    justify-content: space-around; /*запомните*/
+    align-items: center;           /*твари*/
 }
+
+.buttonSend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonSend input[type=button] {
+    margin-top: 10px;
+    background-color: orange;
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px darkgray;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+.buttonSend input[type="button"]:hover {
+    background-color: #fff;
+    color: orange;
+    transition-duration: .3s;
+}   

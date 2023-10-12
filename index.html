@@ -33,8 +33,9 @@
 
     <h1 class="radio_button">Опрос</h1>
 
-    <form name="opros" class="radio_button">
-        <input type="text" name="surname" placeholder="Фамилия"><br>
+    <form name="opros">
+        <div class="radio_button">
+            <input type="text" name="surname" placeholder="Фамилия">
 
         <quest>
             <br><label>Оценка по программированию: </label><br>
@@ -56,9 +57,12 @@
             <label> <input type="radio" name="radio3" value="4">                   Хорошо</label><br>
             <label> <input type="radio" name="radio3" value="3">                   Удовлетворительно</label><br>
         </quest>
-
-        <input type="button" value="ОТПРАВИТЬ" onclick="send(opros.surname, opros.radio1, opros.radio2, opros.radio3);">
+        </div>
         
+        <div class="buttonSend">
+            <input type="button" value="ОТПРАВИТЬ" onclick="send(opros.surname, opros.radio1, opros.radio2, opros.radio3);">
+        </div>
+
     </form>
 </body>
 </html>
