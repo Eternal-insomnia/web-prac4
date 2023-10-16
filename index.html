@@ -62,7 +62,11 @@
         <div class="buttonSend">
             <input type="button" value="ОТПРАВИТЬ" onclick="send(opros.surname, opros.radio1, opros.radio2, opros.radio3);">
         </div>
-
     </form>
+
+    <p id="message">Введите ваш e-mail</p>
+    E-mail: <input id="email" name="email" type="text" placeholder="Ваш e-mail"/>
+    <input name="button-send-email" type="submit" value="Проверить" onclick="validEmail();"/>
+
 </body>
 </html>

@@ -23,3 +23,14 @@ function send(surname, radio1, radio2, radio3) {
     document.write("<h2>Оценка по физике: " + markPhyz + "</h2>");
     document.write("<h2>Рейтинг: " + ((markMath + markPhyz + markProg)/3 ) + "</h2>");
 }
+
+function validEmail() {
+    var regex = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    var myMail = document.getElementById("email").value;
+    var valid = regex.test(myMail);
+    if (valid) output = "Всё верно!";
+    else output = "Переделать, переделать...";
+    document.getElementById("message").innerHTML = output;
+
+    return valid;
+}

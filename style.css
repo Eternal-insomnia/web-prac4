@@ -85,3 +85,23 @@ body {
     color: orange;
     transition-duration: .3s;
 }   
+
+.email-form {
+    background-color: yellowgreen;
+}
+
+.email-form_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20em;
+    height: 5em;
+}
+
+.email-form__check-button {
+    width: 8em;
+    text-align: center;
+    background-color: blueviolet;
+    color: #fff;
+}
