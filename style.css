@@ -1,107 +1,154 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .all_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .all_center input[type="button"] {
-    background-color: orange;
-    color: #fff;
-    border: 1px solid gray;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px darkgray;
-    font-weight: 600;
-    transition-duration: .3s;
+  background-color: orange;
+  color: #fff;
+  border: 1px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px darkgray;
+  font-weight: 600;
+  transition-duration: 0.3s;
 }
 .all_center input[type="button"]:hover {
-    background-color: #fff;
-    color: orange;
-    transition-duration: .3s;
+  background-color: #fff;
+  color: orange;
+  transition-duration: 0.3s;
 }
-.all_center input[type=number]:hover {
-    border: 2px solid gray;
-    border-radius: 6px;
+.all_center input[type="number"]:hover {
+  border: 2px solid gray;
+  border-radius: 6px;
 }
 
 .buttonAvgBox {
-    position: relative;
-    top: 20px;
+  position: relative;
+  top: 20px;
 }
-.buttonAvgBox input[type=button] {
-    position: relative;
-    left: 10px;
+.buttonAvgBox input[type="button"] {
+  position: relative;
+  left: 10px;
 }
-.buttonAvgBox input[type=number] {
-    border-radius: 6px;
-    border: 2px solid rgb(179, 179, 179);
-    height: 1.5em;
-    width: 110px;
-    font-size: 12px;
+.buttonAvgBox input[type="number"] {
+  border-radius: 6px;
+  border: 2px solid rgb(179, 179, 179);
+  height: 1.5em;
+  width: 110px;
+  font-size: 12px;
 }
 
 .radio_button {
-    display: flex; /* инициализация flexbox */
+  display: flex; /* инициализация flexbox */
 
-    overflow: hidden;
+  overflow: hidden;
 
-    flex-direction: row; /* определение размещения flex-items во flexbox*/
-    flex-wrap: nowrap; /* определение переноса элементов на следующую строку*/
-    flex-flow: row nowrap; /* сокращённый вариант двух строк выше*/
+  flex-direction: row; /* определение размещения flex-items во flexbox*/
+  flex-wrap: nowrap; /* определение переноса элементов на следующую строку*/
+  flex-flow: row nowrap; /* сокращённый вариант двух строк выше*/
 
-    justify-content: space-around; /*запомните*/
-    align-items: center;           /*твари*/
+  justify-content: space-around; /*запомните*/
+  align-items: center; /*твари*/
 }
-.radio_button input[type=text] {
-    font-size: 40px;
-    width: 30%;
+.radio_button input[type="text"] {
+  font-size: 40px;
+  width: 30%;
 }
-.radio_button input[type=text]:hover {
-    border: 2px solid gray;
-    border-radius: 6px;
+.radio_button input[type="text"]:hover {
+  border: 2px solid gray;
+  border-radius: 6px;
 }
 
 .buttonSend {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.buttonSend input[type=button] {
-    margin-top: 10px;
-    background-color: orange;
-    color: #fff;
-    border: 1px solid gray;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px darkgray;
-    font-weight: 600;
-    transition-duration: .3s;
+.buttonSend input[type="button"] {
+  margin-top: 10px;
+  background-color: orange;
+  color: #fff;
+  border: 1px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px darkgray;
+  font-weight: 600;
+  transition-duration: 0.3s;
 }
 .buttonSend input[type="button"]:hover {
-    background-color: #fff;
-    color: orange;
-    transition-duration: .3s;
-}   
+  background-color: #fff;
+  color: orange;
+  transition-duration: 0.3s;
+}
 
 .email-form {
-    background-color: yellowgreen;
+  background-color: #eee;
+  color: gray;
+  border: #333 solid 1px;
+  border-radius: 15px;
+  font-weight: 600;
+  padding-left: 5px;
+  transition-duration: 0.5s;
 }
 
 .email-form_option {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 20em;
-    height: 5em;
+  position: relative;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+}
+
+.email-form_theme_dark {
+  background-color: gray;
+  color: #ddd;
+  text-shadow: 2px 2px 10px #000; 
+  border: #333 solid 1px;
+  transition-duration: 0.5s;
+}
+
+.email-form__input-email {
+  background-color: #ddd;
+  border:#000 solid 1px;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.email-form__input-email:hover {
+  background-color: #ccc;
+  transition-duration: 0.2s;
+}
+
+.email-form__input-email_theme_dark {
+  background-color: #aaa;
+  color: #000;
+  transition-duration: 0.2s;
 }
 
 .email-form__check-button {
-    width: 8em;
-    text-align: center;
-    background-color: blueviolet;
-    color: #fff;
+  width: 8em;
+  text-align: center;
+  background-color: orange;
+  color: #eee;
+  font-weight: 600;
+  border: #000 solid 1px;
+  border-radius: 6px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.email-form__check-button_theme_dark {
+  background-color: rgb(206, 134, 0);
+  color: #ddd;
+  transition-duration: 0.2s;
+}
+
+.email-form__check-button_option {
+  margin-left: 10px;
 }
